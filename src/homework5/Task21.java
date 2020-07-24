@@ -1,7 +1,4 @@
-package homework4;
-
-import java.util.Date;
-import java.util.Timer;
+package homework5;
 
 public class Task21 {
     /*
