@@ -6,7 +6,9 @@ public class TimeInterval {
     private int seconds;
 
     public TimeInterval(int seconds) {
-        this.seconds = seconds;
+        this.hours = seconds / 3600;
+        this.minutes = (seconds - hours * 3600) / 60;
+        this.seconds = (seconds - hours * 3600) % 60;
     }
 
     public TimeInterval(int hours, int minutes, int seconds) {
