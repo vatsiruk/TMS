@@ -3,11 +3,7 @@ package homework7.space.shuttles;
 public class SpaceShuttle implements IStart {
     @Override
     public boolean checkSystemBeforeStarting() {
-        if ((Math.random() * 10) > 3) {
-            return true;
-        } else {
-            return false;
-        }
+        return (Math.random() * 10) > 3;
     }
 
     @Override
