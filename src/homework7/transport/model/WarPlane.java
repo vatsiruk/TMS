@@ -32,17 +32,10 @@ public class WarPlane extends AirTransport {
     }
 
     @Override
-    public String toString() {
-        return "WarPlane{" +
-                "brand=" + getBrand() +
-                ", horsePower=" + getHorsePower() +
-                ", maxSpeed=" + getMaxSpeed() +
-                ", weight=" + getWeight() +
-                ", wingspan=" + getWingspan() +
-                ", minRunwayLengthForTakeoff=" + getMinRunwayLengthForTakeoff() +
-                ", missilesNumber=" + missilesNumber +
+    public String description() {
+        return "WarPlane{" + super.description() +
+                "missilesNumber=" + missilesNumber +
                 ", ejectionSystemAvailability=" + ejectionSystemAvailability +
-                ", power=" + getPower() +
                 '}';
     }
 }

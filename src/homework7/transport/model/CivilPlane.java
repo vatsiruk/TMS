@@ -1,6 +1,6 @@
 package homework7.transport.model;
 
-public class CivilPlane extends AirTransport{
+public class CivilPlane extends AirTransport {
     private int passengersNumber;
     private boolean businessClassAvailability;
 
@@ -11,7 +11,7 @@ public class CivilPlane extends AirTransport{
     }
 
     public void printPassengerCapacityStatus(int passengersNumber) {
-        if(this.passengersNumber >= passengersNumber) {
+        if (this.passengersNumber >= passengersNumber) {
             System.out.println("Мест хватило на всех");
         } else {
             System.out.println("Не хватает мест");
@@ -27,17 +27,10 @@ public class CivilPlane extends AirTransport{
     }
 
     @Override
-    public String toString() {
-        return "CivilPlane{" +
-                "brand=" + getBrand() +
-                ", horsePower=" + getHorsePower() +
-                ", maxSpeed=" + getMaxSpeed() +
-                ", weight=" + getWeight() +
-                ", wingspan=" + getWingspan() +
-                ", minRunwayLengthForTakeoff=" + getMinRunwayLengthForTakeoff() +
+    public String description() {
+        return "CivilPlane{" + super.description() +
                 ", passengersNumber=" + passengersNumber +
                 ", businessClassAvailability=" + businessClassAvailability +
-                ", power=" + getPower() +
                 '}';
     }
 }

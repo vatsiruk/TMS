@@ -29,8 +29,14 @@ public abstract class Transport {
         return weight;
     }
 
-
     protected double getPower() {
         return 0.74 * getHorsePower();
+    }
+
+    public String description() {
+        return "brand='" + brand + '\'' +
+                ", horsePower=" + horsePower +
+                ", maxSpeed=" + maxSpeed +
+                ", weight=" + weight;
     }
 }

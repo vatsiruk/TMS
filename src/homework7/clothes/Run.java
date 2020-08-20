@@ -30,9 +30,9 @@ public class Run {
     - раздеться (вызываются методы снять у всех вещей)
      */
     public static void main(String[] args) {
-        Person person1 = new Person("Vasya", new Coat(), new Shorts(), new RubberBoots());
-        Person person2 = new Person("Masha", new Windbreaker(), new Jeans(), new Shoes());
-        Person person3 = new Person("Afanasiy", new WinterJacket(), new SchoolPants(), new Slippers());
+        IPerson person1 = new Person("Vasya", new Coat(), new Shorts(), new RubberBoots());
+        IPerson person2 = new Person("Masha", new Windbreaker(), new Jeans(), new Shoes());
+        IPerson person3 = new Person("Afanasiy", new WinterJacket(), new SchoolPants(), new Slippers());
 
         person1.putOnEverything();
         System.out.println();

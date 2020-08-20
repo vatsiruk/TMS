@@ -17,4 +17,11 @@ public abstract class LandTransport extends Transport{
     public double getFuelConsumption() {
         return fuelConsumption;
     }
+
+    @Override
+    public String description() {
+        return super.description() +
+                ", wheelsNumber=" + wheelsNumber +
+                ", fuelConsumption=" + fuelConsumption ;
+    }
 }

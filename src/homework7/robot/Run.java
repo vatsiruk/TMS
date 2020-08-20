@@ -19,22 +19,22 @@ public class Run {
         У всех роботов вызовите метод action.
         Среди 3-х роботов найдите самого дорогого.
         */
-        Robot robot1 = new Robot(new SonyHead(17), new SamsungHand(10), new ToshibaLeg(7));
+        IRobot robot1 = new Robot(new SonyHead(17), new SamsungHand(10), new ToshibaLeg(7));
         robot1.action();
         System.out.println(robot1.getPrice() + " долларов стоит робот\n");
 
-        Robot robot2 = new Robot(new ToshibaHead(2000), new SonyHand(100), new SamsungLeg(700));
+        IRobot robot2 = new Robot(new ToshibaHead(2000), new SonyHand(100), new SamsungLeg(700));
         robot2.action();
         System.out.println(robot2.getPrice() + " долларов стоит робот\n");
 
-        Robot robot3 = new Robot(new SamsungHead(1700), new ToshibaHand(300), new SonyLeg(200));
+        IRobot robot3 = new Robot(new SamsungHead(1700), new ToshibaHand(300), new SonyLeg(200));
         robot3.action();
         System.out.println(robot3.getPrice() + " долларов стоит робот\n");
 
         System.out.println("Самый дорогой робот стоит: " + getMostExpensiveRobot(robot1, robot2, robot3));;
     }
 
-    private static Integer getMostExpensiveRobot(Robot... robots) {
+    private static Integer getMostExpensiveRobot(IRobot... robots) {
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < robots.length; i++) {
             list.add(robots[i].getPrice());

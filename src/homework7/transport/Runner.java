@@ -14,7 +14,7 @@ public class Runner {
                 "custom",
                 5
         );
-        System.out.println(car);
+        System.out.println(car.description());
         ((PassengerTransport) car).printInformation(4);
 
         Transport truck = new FreightTransport(
@@ -26,7 +26,7 @@ public class Runner {
                 16,
                 40
         );
-        System.out.println(truck);
+        System.out.println(truck.description());
         ((FreightTransport) truck).printLoadingStatus(70);
         ((FreightTransport) truck).printLoadingStatus(30);
 
@@ -40,7 +40,7 @@ public class Runner {
                 100,
                 true
         );
-        System.out.println(plane);
+        System.out.println(plane.description());
         ((CivilPlane) plane).printPassengerCapacityStatus(110);
         ((CivilPlane) plane).printPassengerCapacityStatus(99);
 
@@ -54,7 +54,7 @@ public class Runner {
                 3,
                 true
         );
-        System.out.println(warplane);
+        System.out.println(warplane.description());
         ((WarPlane) warplane).eject();
         for (int i = 0; i < 5; i++) {
             ((WarPlane) warplane).launchMissile();

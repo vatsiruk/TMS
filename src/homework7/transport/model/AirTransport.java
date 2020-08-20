@@ -17,4 +17,11 @@ public abstract class AirTransport extends Transport {
     public int getMinRunwayLengthForTakeoff() {
         return minRunwayLengthForTakeoff;
     }
+
+    @Override
+    public String description() {
+        return super.description() +
+                ", wingspan=" + wingspan +
+                ", minRunwayLengthForTakeoff=" + minRunwayLengthForTakeoff;
+    }
 }

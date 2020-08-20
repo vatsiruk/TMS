@@ -21,16 +21,9 @@ public class FreightTransport extends LandTransport {
     }
 
     @Override
-    public String toString() {
-        return "FreightTransport{" +
-                "brand=" + getBrand() +
-                ", horsePower=" + getHorsePower() +
-                ", maxSpeed=" + getMaxSpeed() +
-                ", weight=" + getWeight() +
-                ", wheelsNumber=" + getWheelsNumber() +
-                ", fuelConsumption=" + getFuelConsumption() +
+    public String description() {
+        return "FreightTransport{" + super.description() +
                 ", liftingCapacity=" + liftingCapacity +
-                ", power=" + getPower() +
                 '}';
     }
 }

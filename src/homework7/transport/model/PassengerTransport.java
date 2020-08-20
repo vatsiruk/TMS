@@ -29,17 +29,10 @@ public class PassengerTransport extends LandTransport {
     }
 
     @Override
-    public String toString() {
-        return "PassengerTransport{" +
-                "brand=" + getBrand() +
-                ", horsePower=" + getHorsePower() +
-                ", maxSpeed=" + getMaxSpeed() +
-                ", weight=" + getWeight() +
-                ", wheelsNumber=" + getWheelsNumber() +
-                ", fuelConsumption=" + getFuelConsumption() +
-                ", bodyType='" + bodyType +
+    public String description() {
+        return "PassengerTransport{" + super.description() +
+                ", bodyType='" + bodyType + '\'' +
                 ", passengersNumber=" + passengersNumber +
-                ", power=" + getPower() +
                 '}';
     }
 }
