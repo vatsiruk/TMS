@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/*
+Создать коллекцию, наполнить ее случайными числами. Удалить повторяющиеся
+числа.
+ */
 public class Task30 {
     private static ArrayList<Integer> list = new ArrayList<>();
 

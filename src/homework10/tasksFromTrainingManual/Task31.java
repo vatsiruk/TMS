@@ -3,6 +3,10 @@ package homework10.tasksFromTrainingManual;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/*
+Создать список оценок учеников с помощью ArryList, заполнить случайными
+оценками. Найти самую высокую оценку с использованием итератора.
+ */
 public class Task31 {
     private static ArrayList<Integer> marks = new ArrayList<>();
 

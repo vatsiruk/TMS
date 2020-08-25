@@ -3,6 +3,10 @@ package homework10.tasksFromTrainingManual;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/*
+Создать список оценок учеников с помощью ArrayList, заполнить случайными
+оценками. Удалить неудовлетворительные оценки из списка.
+ */
 public class Task29 {
     private static ArrayList<Integer> marks = new ArrayList<>();
 

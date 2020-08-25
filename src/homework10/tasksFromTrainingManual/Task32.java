@@ -2,8 +2,10 @@ package homework10.tasksFromTrainingManual;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.StringTokenizer;
 
+/*
+Имеется текст. Следует составить для него частотный словарь.
+ */
 public class Task32 {
     public static void main(String[] args) {
         String text = "            ПРивет,         меня зовут Вася."
